@@ -1,8 +1,10 @@
 # Chirp Plugin
 
-**This README.md file should be modified to describe the features, installation, configuration, and general usage of the plugin.**
+The **Chirp** Plugin is an extension for [Grav CMS](http://github.com/getgrav/grav). 
 
-The **Chirp** Plugin is an extension for [Grav CMS](http://github.com/getgrav/grav). Embed and customize Tweets
+With Chirp you can embed Tweets with the `[tweet]` shortcode and customize the template as your theme needs.
+
+**This plugin requires [Shortcode Core](https://github.com/getgrav/grav-plugin-shortcode-core) to work.**
 
 ## Installation
 
@@ -38,19 +40,31 @@ Here is the default configuration and an explanation of available options:
 
 ```yaml
 enabled: true
+built_in_css: true # Set to `false` to use custom CSS
 ```
 
 Note that if you use the Admin Plugin, a file with your configuration named chirp.yaml will be saved in the `user/config/plugins/`-folder once the configuration is saved in the Admin.
 
 ## Usage
 
-**Describe how to use the plugin.**
+You can insert a tweet passing an URL through the property.
 
-## Credits
+```
+[tweet url="https://twitter.com/jack/status/20"][/tweet]
+```
 
-**Did you incorporate third-party code? Want to thank somebody?**
+Or inside the tags.
 
-## To Do
+```
+[tweet]https://twitter.com/jack/status/20[/tweet]
+```
 
-- [ ] Future plans, if any
+Or just use the ID.
 
+```
+[tweet]20[/tweet]
+```
+
+## Need a website?
+
+[Himmlisch Web](https://web.himmlisch.com.mx) is a software development agency ready to help your business grow.  [Contact us!](https://himmlisch.com.mx/contact)
