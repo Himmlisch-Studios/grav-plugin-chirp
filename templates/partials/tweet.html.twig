@@ -1,0 +1,15 @@
+<figure class="tweet">
+	<blockquote class="tweet__content" cite="{{ tweet.url }}">
+		{{ tweet.content|raw }}
+	</blockquote>
+	<div class="tweet__bottom">
+		<figcaption class="tweet__credits">
+			<span class="tweet__sr-only">Tweet by</span>
+			<cite class="tweet__author">{{ tweet.author }}</cite>
+			<span class="tweet__at">(@{{ tweet.at }})</span>
+		</figcaption>
+		<time class="tweet__time" datetime="{{ tweet.date|date('Y-m-d')|e }}">
+			{{ tweet.date|date(system.pages.dateformat.short) }}
+		</time>
+	</div>
+</figure>

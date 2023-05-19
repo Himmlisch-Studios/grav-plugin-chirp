@@ -1,0 +1,30 @@
+{
+  "name": "himmlisch-studios/chirp",
+  "type": "grav-plugin",
+  "description": "Embed and customize Tweets",
+  "keywords": ["plugin"],
+  "homepage": "https://github.com/Himmlisch-Studios/grav-plugin-chirp",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Himmlisch Web",
+      "email": "web@himmlisch.com.mx",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3",
+    "symfony/dom-crawler": "^4.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\Chirp\\": "classes/"
+    },
+    "classmap":  ["chirp.php"]
+  },
+  "config": {
+    "platform": {
+      "php": "7.1.3"
+    }
+  }
+}

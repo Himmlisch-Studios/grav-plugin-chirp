@@ -1,0 +1,45 @@
+.tweet {
+    display: block;
+    margin: 2rem 0;
+    background-color: #f6f6f6;
+    padding: 1.25rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.tweet__content {
+    font-size: 1.125rem;
+    margin: 0 0 1rem 0;
+    padding: 0;
+    border: none;
+}
+
+.tweet__bottom {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: true;
+    align-items: start;
+}
+
+.tweet__credits {
+    display: block;
+}
+
+.tweet__author {
+    display: inline-block;
+}
+
+.tweet__author::before {
+    content: "\2014 \0020";
+}
+
+.tweet__at {
+    display: inline-block;
+}
+
+/* 
+ | Hide DOM Elements that need to
+ | be read only by Screen Readers 
+*/
+.tweet__sr-only {
+    display: none;
+}
